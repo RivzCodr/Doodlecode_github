@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.app-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.color-palette {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds space between color brushes */
+}
+
+.color-brush {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.color-brush:hover {
+    transform: scale(1.1);
+}
+
+.color-brush.selected {
+    border-color: #333333;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#doodleArea {
+    border: 2px solid #cccccc;
+    cursor: crosshair;
+    touch-action: none; /* Important for touch devices */
+    margin-bottom: 15px;
+    background-color: #ffffff; /* Ensure canvas background is white for eraser */
+}
+
+.controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.controls button#clearButton {
+    background-color: #f44336; /* Red for clear */
+}
+
+.controls button#clearButton:hover {
+    background-color: #da190b;
+}
+
+.instructions {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+}
