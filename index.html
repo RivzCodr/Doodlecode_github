@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle Sound App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="color-palette">
+            <div class="color-brush" style="background-color: #FF0000;" data-color="#FF0000"></div> <div class="color-brush" style="background-color: #00FF00;" data-color="#00FF00"></div> <div class="color-brush" style="background-color: #0000FF;" data-color="#0000FF"></div> <div class="color-brush" style="background-color: #FFFF00;" data-color="#FFFF00"></div> <div class="color-brush" style="background-color: #FF00FF;" data-color="#FF00FF"></div> <div class="color-brush" style="background-color: #00FFFF;" data-color="#00FFFF"></div> <div class="color-brush" style="background-color: #000000;" data-color="#000000"></div> <div class="color-brush" style="background-color: #FFFFFF; border: 1px solid #CCC;" data-color="#FFFFFF"></div> </div>
+
+        <canvas id="doodleArea" width="500" height="300"></canvas>
+
+        <div class="controls">
+            <button id="clearButton">Clear Drawing</button>
+            <button id="soundButton">Turn Drawing into Sound</button>
+        </div>
+         <p class="instructions">
+            Instructions: Select a color, then click and drag on the white area to draw.
+            Higher doodles will produce higher pitch sounds when you click "Turn Drawing into Sound".
+            The sound will play from left to right.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
